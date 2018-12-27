@@ -52,7 +52,6 @@ nfpm:
   # Formats to be generated.
   formats:
     - deb
-    - rpm
 
 changelog:
   sort: asc
