@@ -20,8 +20,9 @@ before_script:
   - go get -u golang.org/x/lint/golint
   - go mod download
 
-script: make lint
-  make test
+script:
+  - make lint
+  - make test
 
 # calls goreleaser
 deploy:
