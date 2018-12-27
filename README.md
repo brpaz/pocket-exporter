@@ -14,18 +14,18 @@
 
 To install, the best way is to use the compiled binary.
 
-```
-curl <latest release>
-```
+You can get the latest one from the [Releases](https://github.com/brpaz/pocket-exporter/releases) page.
+
+Then extract its contents and move to the appropriate folder:
 
 ```
-sudo mv <bin> /usr/local/bin/pocket-exporter
-sudo chmod +x (/usr/local/bin/pocket-exporter)
+sudo mv pocket-exporter /usr/local/bin/pocket-exporter
+sudo chmod +x /usr/local/bin/pocket-exporter
 ```
 
 ## Usage
 
-Open a terminal window and run:
+Open a terminal window, run:
 
 ```
 pocket-exporter --consumerKey="some-consumer-key" -o /tmp/teste.json-o="/path/to/some/file.json"
