@@ -2,7 +2,7 @@
 language: go
 
 go:
-  - 1.10.x
+  - 1.11.x
   - master
 
 os:
@@ -16,15 +16,14 @@ install: true
 env:
   - GO111MODULE=on
 
-script:
-  make lint
+script: make lint
   make test
 
 # calls goreleaser
 deploy:
-- provider: script
-  skip_cleanup: true
-  script: curl -sL https://git.io/goreleaser | bash
-  on:
-    tags: true
-    condition: $TRAVIS_OS_NAME = linux
+  - provider: script
+    skip_cleanup: true
+    script: curl -sL https://git.io/goreleaser | bash
+    on:
+      tags: true
+      condition: $TRAVIS_OS_NAME = linux
