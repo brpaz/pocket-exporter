@@ -1,0 +1,30 @@
+# .travis.yml
+language: go
+
+go:
+  - 1.10.x
+  - master
+
+os:
+  - linux
+  - osx
+
+sudo: false
+
+install: true
+
+env:
+  - GO111MODULE=on
+
+script:
+  make lint
+  make test
+
+# calls goreleaser
+deploy:
+- provider: script
+  skip_cleanup: true
+  script: curl -sL https://git.io/goreleaser | bash
+  on:
+    tags: true
+    condition: $TRAVIS_OS_NAME = linux
