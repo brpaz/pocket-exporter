@@ -1,6 +1,6 @@
 # Pocket Exporter
 
-[![Build status](https://img.shields.io/travis/com/brpaz/pocket-exporter.svg](https://travis-ci.org/brpaz/pocket-exporter)
+[![Build status](https://img.shields.io/travis/com/brpaz/pocket-exporter.svg)](https://travis-ci.org/brpaz/pocket-exporter)
 [![License](https://img.shields.io/github/license/brpaz/pocket-exporter.svg)](https://github.com/brpaz/pocket-exporter/LICENSE)
 [![Latest Release](https://img.shields.io/github/release/brpaz/pocket-exporter.svg)](https://github.com/brpaz/pocket-exporter/releases/latest)
 
@@ -28,14 +28,14 @@ sudo chmod +x (/usr/local/bin/pocket-exporter)
 Open a terminal window and run:
 
 ```
-pocket-exporter --consumerKey="82043-dae3fa9ca9d68954fc7201c5" -o /tmp/teste.json-o="/path/to/some/file.json"
+pocket-exporter --consumerKey="some-consumer-key" -o /tmp/teste.json-o="/path/to/some/file.json"
 ```
 
 ## Contributing
 
 All contributions are welcome.
 
-Please see [Contributing.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md] for details.
+Please see [Contributing.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
 
 ## Authors
 
