@@ -16,6 +16,10 @@ install: true
 env:
   - GO111MODULE=on
 
+before_script:
+  - go get -u golang.org/x/lint/golint
+  - go mod download
+
 script: make lint
   make test
 
